@@ -27,7 +27,7 @@ const ListadoProyectos = () => {
   if (proyectos.length === 0) {
     return (
       <p className="alerta-no-proyectos">
-        No hay proyectos, comienza creando uno
+        There are no projects, start by creating one
       </p>
     );
   }

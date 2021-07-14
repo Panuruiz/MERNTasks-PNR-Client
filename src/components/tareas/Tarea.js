@@ -47,13 +47,13 @@ const Tarea = ({ tarea }) => {
             type="button" 
             className="completo"
             onClick={ () => cambiarEstado(tarea) }
-            >Completo</button>
+            >Complete</button>
         ) : (
           <button 
             type="button" 
             className="incompleto"
             onClick={ () => cambiarEstado(tarea) }
-            >Incompleto</button>
+            >Incomplete</button>
         )}
       </div>
       <div className="acciones">
@@ -62,14 +62,14 @@ const Tarea = ({ tarea }) => {
             className="btn btn-primario"
             onClick={() => seleccionarTarea(tarea)}
             >
-          Editar
+          Edit
         </button>
         <button 
             type="button" 
             className="btn btn-secundario"
             onClick={() => tareaEliminar(tarea._id)}
             >
-          Eliminar
+          Delete
         </button>
       </div>
     </li>

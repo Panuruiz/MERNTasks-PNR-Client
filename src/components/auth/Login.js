@@ -47,7 +47,7 @@ const Login = (props) => {
 
         // Validar que no haya campos vacíos
         if(email.trim() === '' || password.trim() === '') {
-            mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
+            mostrarAlerta('All fields are required', 'alerta-error');
         }
 
         // Pasarlo al action
@@ -59,7 +59,7 @@ const Login = (props) => {
         <div className="form-usuario">
             {alerta ?  ( <div className={`alerta ${alerta.categoria}`}>{alerta.msg}</div> ) : null}
             <div className="contenedor-form sombra-dark">
-                <h1>Iniciar Sesión</h1>
+                <h1>Log In</h1>
                 <form
                     onSubmit={onSubmit}
                 >
@@ -69,7 +69,7 @@ const Login = (props) => {
                             type="email" 
                             id="email"
                             name="email"
-                            placeholder="Tu E-Mail"
+                            placeholder="Your E-Mail"
                             value={email}
                             onChange={onChange}
                         />
@@ -80,7 +80,7 @@ const Login = (props) => {
                             type="password" 
                             id="password"
                             name="password"
-                            placeholder="Tu Password"
+                            placeholder="Your Password"
                             value={password}
                             onChange={onChange}
                         />
@@ -89,12 +89,12 @@ const Login = (props) => {
                         <input 
                             type="submit" 
                             className="btn btn-primario btn-block" 
-                            value="Iniciar Sesión"
+                            value="Log In"
                         />
                     </div>
                 </form>
                 <Link to={'/nueva-cuenta'} className="enlace-cuenta">
-                    Obtener Cuenta Nueva
+                    Obtain New Account
                 </Link>
             </div>
         </div>

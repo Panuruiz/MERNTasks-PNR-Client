@@ -18,7 +18,7 @@ const Barra = () => {
         <header className="app-header">
             {
                 usuario 
-                ? <p className="nombre-usuario">Hola <span>{usuario.nombre}</span></p> 
+                ? <p className="nombre-usuario">Hello <span>{usuario.nombre}</span>!</p> 
                 : null
             }
             
@@ -26,7 +26,7 @@ const Barra = () => {
                 <button
                     className="btn btn-blank btn-logout cerrar-sesion"
                     onClick={() => cerrarSesion()}
-                >Cerrar Sesión</button>
+                >Log Out</button>
             </nav>
         </header>
      );
