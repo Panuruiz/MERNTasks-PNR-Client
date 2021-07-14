@@ -15,7 +15,7 @@ const ListadoTareas = () => {
     const { tareasproyecto } = tareasContext;
 
     // Si no hay proyecto seleccionado
-    if(!proyecto) return <h2>Select a proyect to start creating tasks</h2>;
+    if(!proyecto) return <h2>Select a project to start creating tasks</h2>;
 
     // Array destructuring para extraer el proyecto actual
     const [proyectoActual] = proyecto;
@@ -34,7 +34,7 @@ const ListadoTareas = () => {
                     ?
                         (
                             <li className="tarea">
-                                <p>No hay tareas</p>
+                                <p>There are no Tasks</p>
                             </li>
                         )
                     : <TransitionGroup>
