@@ -55,19 +55,19 @@ const NuevaCuenta = (props) => {
             email.trim() === '' ||
             password.trim() === '' ||
             confirmar.trim() === '' ) {
-                mostrarAlerta('Todos los campos son obligatorios', "alerta-error");
+                mostrarAlerta('All Fields are required', "alerta-error");
                 return;
             }
 
         // Password mínimo de 6 caracteres
         if(password.length < 6 ) {
-            mostrarAlerta('El Password debe contener al menos 6 caracteres', "alerta-error");
+            mostrarAlerta('Password must contain at least 6 characters', "alerta-error");
             return;
         }
 
         // Los dos passwords son iguales
         if(password !== confirmar) {
-            mostrarAlerta('Las Passwords no son iguales', "alerta-error");
+            mostrarAlerta('Passwords do not match', "alerta-error");
             return;
         }
 
