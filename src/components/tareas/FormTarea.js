@@ -94,7 +94,7 @@ const FormTarea = () => {
                     <input 
                         type="text"
                         className="input-text"
-                        placeholder="Nombre Tarea..."
+                        placeholder="Give a Name for your next Task"
                         name="nombre"
                         value={nombre}
                         onChange={handleChange}
@@ -104,11 +104,11 @@ const FormTarea = () => {
                     <input 
                         type="submit"
                         className="btn btn-primario btn-submit btn-block"
-                        value={tareaseleccionada ? 'Editar Tarea' : "Agregar Tarea"}
+                        value={tareaseleccionada ? 'Edit Task' : "Add Task"}
                          />
                 </div>
             </form>
-            {errortarea ? <p className="mensaje error">El nombre de la tarea es obligatorio</p> : null}
+            {errortarea ? <p className="mensaje error">A Name Task is required.</p> : null}
         </div>
      );
 }
